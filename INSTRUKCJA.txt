@@ -1,0 +1,47 @@
+MEDIA STUDIO — wersja lokalna
+
+1. Rozpakuj cały ZIP do dowolnego folderu.
+2. Otwórz index.html w aktualnym Chrome lub Edge na komputerze.
+3. Wybierz zakładkę Grafiki lub Wideo. Dodaj do 15 plików w każdej zakładce,
+   następnie pełnowymiarowe nakładki PNG. Zakładki mają osobne kolejki i wyniki.
+4. W sekcji 03 przypisz znak każdemu materiałowi lub wszystkim naraz.
+5. Grafiki: PNG wypełnia cały kadr. Wideo: PNG jest dopasowany do szerokości
+   z zachowaniem proporcji i wyśrodkowany w pionie. Nadmiar wysokości jest
+   przycinany równo z góry i dołu. Przezroczystość przygotuj w samym PNG.
+6. Dla filmów wpisz szerokość w pikselach (pusta = oryginał)
+   i maksymalny rozmiar wyniku (domyślnie 10 MB na film).
+7. Kliknij Przetwórz pliki. Pobierz pojedyncze wyniki lub wspólny ZIP.
+
+Nie wymaga instalacji, serwera ani internetu. Materiały nie są przesyłane.
+Wideo przetwarzane jest w czasie rzeczywistym, z maksymalnie czterema
+próbami dopasowania do limitu. Pozostaw kartę aktywną, komputer nie może
+przejść w uśpienie. Nie zamykaj strony przed pobraniem wyników.
+Zbyt mały limit może uniemożliwić eksport: aplikacja zgłosi błąd zamiast
+udostępnić plik przekraczający limit. 1 MB = 1 000 000 bajtów.
+Eksport WebM: do 30 kl./s, dźwięk opcjonalny. Obsługiwane pliki wejściowe
+zależą od kodeków dostępnych w przeglądarce. Pliki z DRM nie są obsługiwane.
+Eksport WebP: oryginalne wymiary, wybrana jakość. Animowane grafiki tracą
+animację. Metadane, napisy i dodatkowe ścieżki filmu nie są zachowywane.
+Znak jest pojedynczym PNG na materiał; nakładka pokrywa cały obszar obrazu lub filmu.
+Przy dużych filmach/zdjęciach potrzebna jest odpowiednia ilość pamięci RAM.
+Wyniki mają numery w nazwach, aby uniknąć nadpisania plików o tej samej nazwie.
+
+IMPORT .FIG
+W zakładce Import .fig wybierz dokument, zaznacz wykryte media i dodaj je
+do odpowiednich kolejek. PNG i JPG trafiają do Grafik, MP4 do Wideo.
+Znaki wodne przypisujesz po imporcie. Limit wynosi 15 materiałów w zakładce.
+Odczytywane są archiwa ZIP .fig, metody STORE i DEFLATE. Import nie renderuje
+warstw, nie odtwarza kadrowania i nie pobiera filmów z zewnętrznych adresów.
+Nazwy mediów w archiwum mogą być hashami zamiast oryginalnych nazw.
+Pliki importowane są źródłowymi zasobami, a nie gotowymi projektami.
+
+SEKCJE FIGMA
+Importer odczytuje nazwy sekcji lub nadrzędnych ramek z canvas.fig.
+Wybierz sekcję zakładką, aby obejrzeć jej zasoby. Checkbox przy nazwie
+sekcji włącza lub wyłącza jej materiały z importu. Zasób współdzielony
+przez kilka sekcji jest dodawany tylko raz; pozostaje wybrany, jeśli
+co najmniej jedna z jego sekcji jest włączona.
+Pozostałe zasoby i miniatury są dostępne w osobnej, domyślnie wyłączonej
+grupie. Nazwy oryginalnych mediów są zachowane, gdy dokument je udostępnia.
+Rozpakuj cały ZIP: index.html korzysta z lokalnych fig-structure.js
+i fzstd.js. Nadal działa offline, bez instalacji i bez serwera.
